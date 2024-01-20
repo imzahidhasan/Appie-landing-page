@@ -25,7 +25,7 @@
                         <img class="w-full h-full" src="image/logo-3.png" alt="logo">
                     </div>
                 </div>
-                <div class="space-x-3 font-medium text-white">
+                <div class="lg:block hidden space-x-3 font-medium text-white">
                     <a class="hover:text-orange-600 duration-200" href="#">Home</a>
                     <a class="hover:text-orange-600 duration-200" href="#">Service</a>
                     <a class="hover:text-orange-600 duration-200" href="#">Blogs</a>
@@ -33,11 +33,14 @@
                     <a class="hover:text-orange-600 duration-200" href="#">Contact</a>
                 </div>
             </div>
-            <div class="flex justify-center items-center gap-4 font-medium text-white">
+            <div class=" hidden lg:flex justify-center items-center gap-4 font-medium text-white">
                 <p class="hover:text-orange-600 duration-200">Login</p>
                 <button class="p-5 bg-orange-700 rounded-2xl border-none hover:bg-orange-600 duration-200">
                     Get Started
                 </button>
+            </div>
+            <div class="w-10 lg:hidden">
+                <img class="block" src="image/more.png" alt="">
             </div>
         </div>
 
@@ -45,15 +48,15 @@
 
         </div>
     </nav>
-    <header class="bg-blue-900 container mx-auto  h-[60%] p-14 relative">
-        <div class="p-7">
-            <h1 class="font-medium text-white p-5 text-center text-5xl">Creative way to <br>Showcase your <span
+    <header class="bg-blue-900 container mx-auto  flex flex-col items-center justify-center ">
+        <div class="p-16">
+            <h1 class="p-4 font-medium text-white text-center text-4xl lg:text-5xl">Creative way to <br>Showcase your <span
                     class="text-orange-600">App</span></h1>
-            <p class="text-white font-normal text-center opacity-70">Lorem ipsum dolor sit amet consectetur adipisicing
+            <p class="text-white font-normal  text-center opacity-70">Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Debitis, consequatur.
             </p>
-            <div class="flex justify-center items-center p-5 gap-5 text-white">
-                <button class="lg:p-4 bg-orange-700 rounded-2xl border-none hover:bg-orange-600 duration-200">
+            <div class="p-4 my-5 flex justify-center items-center  gap-5 text-white">
+                <button class=" bg-orange-700 rounded-2xl border-none lg:p-4 p-3 hover:bg-orange-600 duration-200">
                     Get Started
                 </button>
                 <div class="flex justify-center items-center gap-2">
@@ -62,9 +65,54 @@
                 </div>
             </div>
         </div>
-     
+        <div class="md:translate-y-72 translate-y-72 lg:translate-y-80 mx-auto absolute">
+            <img src="image/hero-thumb-4.png" alt="">
+        </div>
+
     </header>
-   
+    <div class="lg:mt-64 mt-24 md:mt-44 text-center  ">
+        <h1 class="font-semibold text-4xl text-gray-700 p-5">What you can do</h1>
+        <p class="font-normal text-gray-700/75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+            <br>quidem dignissimos a possimus consectetur culpa repudiandae reiciendis blanditiis quis et!
+        </p>
+    </div>
+    <div class=" container gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-5 mt-10 mx-auto">
+        <div class="shadow-lg flex flex-col gap-4 text-center items-center ">
+            <div class="h-14 w-14 bg-green-500 rounded-full flex items-center justify-center">
+                <img class="w-10/12" src="image/play-store.png" alt="">
+            </div>
+            <h1 class="font-semibold text-gray-900">Easy to use</h1>
+            <p class="font-normal text-gray-700 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit,
+                delectus!</p>
+            <p class="font-normal text-gray-700 p-8">Read more</p>
+        </div>
+    <div class="shadow-lg flex flex-col gap-4 text-center items-center ">
+        <div class="h-14 w-14 bg-yellow-500 rounded-full flex items-center justify-center">
+            <img class="w-10/12" src="image/play-store.png" alt="">
+        </div>
+        <h1 class="font-semibold text-gray-900">Easy to use</h1>
+        <p class="font-normal text-gray-700 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit,
+            delectus!</p>
+        <p class="font-normal text-gray-700 p-8">Read more</p>
+    </div><div class="shadow-lg flex flex-col gap-4 text-center items-center ">
+        <div class="h-14 w-14 bg-purple-500 rounded-full flex items-center justify-center">
+            <img class="w-10/12" src="image/play-store.png" alt="">
+        </div>
+        <h1 class="font-semibold text-gray-900">Easy to use</h1>
+        <p class="font-normal text-gray-700 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit,
+            delectus!</p>
+        <p class="font-normal text-gray-700 p-8">Read more</p>
+    </div><div class="shadow-lg flex flex-col gap-4 text-center items-center ">
+        <div class="h-14 w-14 bg-red-500 rounded-full flex items-center justify-center">
+            <img class="w-10/12" src="image/play-store.png" alt="">
+        </div>
+        <h1 class="font-semibold text-gray-900">Easy to use</h1>
+        <p class="font-normal text-gray-700 ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit,
+            delectus!</p>
+        <p class="font-normal text-gray-700 p-8">Read more</p>
+    </div>
+    </div>
+
 </body>
 
 </html>
